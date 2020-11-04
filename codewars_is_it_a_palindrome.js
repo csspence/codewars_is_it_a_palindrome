@@ -7,6 +7,6 @@ In Racket, the function is called palindrome?
 (palindrome? "Yay")  ; returns #t
 */
 
-function isPalindrome(x) {
-  // your code here
+const isPalindrome = (x) => {
+  return x.toLowerCase() === (x.split('').reverse()).join('').toLowerCase() ? true : false;
 }
